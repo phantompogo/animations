@@ -1,6 +1,0 @@
-
-{
-  "name": "Image To Video Animations: Image to Animation Prompt Generator",
-  "description": "An application that analyzes an uploaded image using Gemini API and generates a descriptive animation prompt in English, suitable for AI text-to-video models. Features a minimalist dark blue gradient interface with subtle effects.",
-  "requestFramePermissions": []
-}
