@@ -1,0 +1,6 @@
+{
+  "name": "V2 Rilis Model Image To Video Animations",
+  "description": "An application that analyzes an uploaded image using Gemini API and generates a descriptive animation prompt in English, suitable for AI text-to-video models. Features a minimalist dark blue gradient interface with subtle effects.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image To Video Animations</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* For custom scrollbar if desired, optional */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #1e293b; /* slate-800 */
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #38bdf8; /* sky-500 */
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #0ea5e9; /* sky-600 */
+    }
+    /* Simple fade-in animation */
+    .animate-fade-in {
+      animation: fadeInAnimation 0.5s ease-out forwards;
+    }
+    @keyframes fadeInAnimation {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    /* Donation button pulse glow animation */
+    @keyframes pulseGlow {
+      0%, 100% { 
+        box-shadow: 0 0 8px rgba(255, 107, 107, 0.7), 0 0 12px rgba(255, 107, 107, 0.5), 0 0 18px rgba(249, 115, 22, 0.3);
+      }
+      50% { 
+        box-shadow: 0 0 12px rgba(249, 115, 22, 0.9), 0 0 20px rgba(249, 115, 22, 0.7), 0 0 30px rgba(255, 107, 107, 0.5);
+      }
+    }
+    .animate-pulse-glow {
+      animation: pulseGlow 2.5s infinite ease-in-out;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.4.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-slate-900">
+  <!-- Application root container -->
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
