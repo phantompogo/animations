@@ -1,7 +1,7 @@
 
 import { GoogleGenAI, GenerateContentResponse } from "@google/genai";
 
-const MODEL_NAME = 'gemini-2.5-flash-preview-04-17';
+const MODEL_NAME = 'gemini-2.5-flash';
 const MISSING_KEY_PLACEHOLDER = "MISSING_API_KEY"; // Ensure this matches any potential value from process.env
 
 export const analyzeImageWithGemini = async (
