@@ -297,7 +297,7 @@ const App: React.FC = () => {
         </div>
         <footer className="text-center mt-10 mb-4 text-slate-500 text-sm space-y-1">
           <p>Powered by <a href="https://ai.google.dev/" target="_blank" rel="noopener noreferrer" className="hover:text-sky-400 transition-colors">Gemini API</a> & React</p>
-          <p>Versi 1.1</p>
+          <p>Versi 1.2</p>
         </footer>
       </div>
     </>
